@@ -1,6 +1,7 @@
 import time
 import pandas as pd
 import numpy as np
+from datetime import datetime
 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
@@ -212,7 +213,11 @@ def user_stats(df):
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
-
+    
+ def time():
+    now = datetime.now()
+    current_time = now.strftime("%H:%M:%S")
+    print("Current Time =", current_time)
 
 def main():
     while True:
@@ -222,7 +227,8 @@ def main():
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df)
-
+        time()
+        
         print("You must be an expert now with all the insights!")
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
