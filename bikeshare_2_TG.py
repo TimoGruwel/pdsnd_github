@@ -223,6 +223,8 @@ def main():
         trip_duration_stats(df)
         user_stats(df)
 
+        print("You must be an expert now with all the insights!")
+
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
