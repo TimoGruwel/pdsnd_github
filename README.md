@@ -10,8 +10,9 @@ Bike Rental Analysis
 Provide data of bike rentals.
 
 ### Files used
-Include the files used
+- chicago.csv
+- washington.csv
+- new_york_city.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+Credits for Udacity for providing a good training in teaching Python, GIT and GitHub.
