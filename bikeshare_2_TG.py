@@ -1,7 +1,9 @@
+# Import Packages
 import time
 import pandas as pd
 import numpy as np
 
+# Define File Dictionary
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
@@ -96,7 +98,6 @@ def load_data(city_input, month_input, day_input, filter_input):
         df - Pandas DataFrame containing city data filtered by month and day
     """
     df = pd.read_csv(CITY_DATA.get(city_input))
-    #df = pd.read_csv("Downloads/bikeshare-2/" + CITY_DATA.get(city_input))
     
     # Change dtypes
     df['Start Time'] = pd.to_datetime(df['Start Time'])
